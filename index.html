@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Débora Kulczar - Advocacia</title>
-    style.css
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="logo">
-            assets/logo.png
-        </ <nav>
+            <img src="assets/logo.png" alt="Logo Débora Kulczar Advocacia">
+        </div>
+        <nav>
             <ul>
-                <li><a href="#inicio></li>
-                <li>#sobreSobre</a></li>
-                <li>#areasÁreas de Atuação</a></li>
-                <li>#equipeEquipe</a></li>
-                <li>#contatoContato</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#areas">Áreas de Atuação</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="horario">Seg - Sex: 9h às 18h</div>
@@ -30,8 +31,8 @@
             <h1>Excelência em Advocacia e Consultoria Jurídica</h1>
             <p>Atuação em Direito de Família, Trabalho, Previdenciário, Consumidor e Cível. Soluções jurídicas personalizadas para pessoas físicas e empresas.</p>
             <div class="hero-buttons">
-                #contatoAgendar Consulta</a>
-                #areasNossas Áreas de Atuação</a>
+                <a href="#contato" class="btn-primary">Agendar Consulta</a>
+                <a href="#areas" class="btn-secondary">Nossas Áreas de Atuação</a>
             </div>
         </div>
     </section>
@@ -40,7 +41,7 @@
     <section id="sobre" class="sobre">
         <h2>Quem Somos</h2>
         <div class="sobre-content">
-            assets/mesario.jpg
+            <img src="assets/mesario.jpg" alt="Imagem do escritório">
             <p>Atuamos com dedicação e estratégia para oferecer soluções jurídicas personalizadas. Nosso compromisso é garantir excelência no atendimento e resultados eficazes para nossos clientes.</p>
         </div>
     </section>
@@ -61,7 +62,7 @@
     <section id="equipe" class="equipe">
         <h2>Advogada Responsável</h2>
         <div class="perfil">
-            assets/perfil.jpg
+            <img src="assets/perfil.jpg" alt="Foto profissional da advogada">
             <p>Dra. Débora Kulczar - Advogada - OAB 479600-SP</p>
         </div>
     </section>
@@ -69,7 +70,7 @@
     <!-- Contato -->
     <section id="contato" class="contato">
         <h2>Entre em Contato</h2>
-        mailto:contato@deborakulczar.com
+        <form action="mailto:contato@deborakulczar.com" method="post" enctype="text/plain">
             <input type="text" name="nome" placeholder="Nome Completo" required>
             <input type="email" name="email" placeholder="E-mail" required>
             <input type="tel" name="telefone" placeholder="Telefone" required>
@@ -92,3 +93,4 @@
     </footer>
 </body>
 </html>
+
