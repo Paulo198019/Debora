@@ -1,0 +1,1 @@
+function handleClick(action){alert('Botão clicado: '+action);}
