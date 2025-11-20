@@ -1,1 +1,4 @@
-function handleClick(action){if(action==='consulta'){alert('Agendamento de consulta em breve!');}else if(action==='atuacao'){alert('Veja nossas áreas de atuação!');}}
+function handleClick(action){
+  if(action==='consulta'){alert('Agendamento de consulta em breve!');}
+  else if(action==='atuacao'){alert('Veja nossas áreas de atuação!');}
+}
