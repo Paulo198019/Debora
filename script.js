@@ -8,8 +8,4 @@ toggle.addEventListener('click', () => {
 
 // Formulário simples
 const form = document.getElementById('contact-form');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Mensagem enviada com sucesso!');
-  form.reset();
-});
+form.addEventListener('submit',
