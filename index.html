@@ -1,56 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Débora Kulczar Advocacia</title>
-  style.css
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-container">
-      <div class="hero-image">
-        <img src="escritoriopg
-      </div>
-      <div class="hero-text">
-        <h1>Débora Kulczar Advocacia</h1>
-        <p>Excelência em soluções jurídicas personalizadas, com ética, transparência e compromisso com resultados.</p>
-        <div class="hero-buttons">
-          <button onclick="handleClick('consulta')">Agendar Consulta</button>
-          <button onclick="handleClick('atuacao')">Áreas de Atuação</button>
-        </div>
-      </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">Débora Kulczar</h1>
+      <nav id="menu" class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Áreas</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
     </div>
   </header>
 
-  <!-- Quem Somos -->
-  <section class="sobre">
-    <h2>Quem Somos</h2>
-    <p>Débora Kulczar Advocacia - atuamos com dedicação e estratégia para oferecer soluções jurídicas personalizadas. Nosso compromisso é garantir segurança e resultados para nossos clientes.</p>
-    <h2>Sobre</h2>
-    <p>Débora Kulczar Advocacia nasceu com o propósito de oferecer soluções jurídicas de excelência, sempre pautadas pela ética, transparência e compromisso com resultados. Nossa equipe multidisciplinar atua em diversas áreas do Direito, desenvolvendo estratégias personalizadas para atender às necessidades específicas de cada cliente — seja pessoa física ou jurídica. Mais do que assessoria, entregamos confiança, segurança e inovação na condução de cada caso.</p>
-  </section>
-
-  <!-- Áreas de Atuação -->
-  <section class="areas">
-    <h2>Áreas de Atuação</h2>
-    <div class="areas-grid">
-      <div class="card"><h3>Direito de Família</h3><p>Divórcio, pensão alimentícia, guarda de filhos e partilha de bens.</p></div>
-      <div class="card"><h3>Direito do Trabalho</h3><p>Defesa de empregados e empregadores em ações trabalhistas...</p></div>
-      <div class="card"><h3>Direito Previdenciário</h3><p>Aposentadorias, benefícios por incapacidade e revisões...</p></div>
-      <div class="card"><h3>Direito do Consumidor</h3><p>Defesa dos direitos do consumidor contra práticas abusivas.</p></div>
-      <div class="card"><h3>Direito Civil</h3><p>Contratos, responsabilidade civil e questões patrimoniais.</p></div>
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Excelência em Advocacia e Consultoria Jurídica</h2>
+        <p>Soluções jurídicas estratégicas e personalizadas com ética, transparência e compromisso.</p>
+        <div class="hero-buttons">
+          <a href="#contato" class="btn primary">Agendar Consulta</a>
+          <a href="#areas" class="btn secondary">Áreas de Atuação</a>
+        </div>
+      </div>
+      <img src="https://via.placeholder.com/600x400" alt="Imagem do Escritório" class="hero-img">
     </div>
   </section>
 
-  <!-- Advogada Responsável -->
-  <section class="advogada">
-    <h2>Advogada Responsável</h2>
-    perfil.jpg
-    <p>Débora Kulczar</p>
+  <!-- Sobre -->
+  <section id="sobre" class="sobre">
+    <div class="container text-center">
+      <h2>Quem Somos</h2>
+      <p>Atuamos com dedicação e estratégia para oferecer soluções jurídicas personalizadas. Nosso compromisso é garantir excelência no atendimento e resultados eficazes.</p>
+    </div>
   </section>
 
-  script.js</script>
+  <!-- Áreas -->
+  <section id="areas" class="areas">
+    <div class="container">
+      <h2 class="text-center">Áreas de Atuação</h2>
+      <div class="grid">
+        <div class="card"><h3>Direito de Família</h3><p>Atuação dedicada em causas familiares com foco em soluções humanas e efetivas.</p></div>
+        <div class="card"><h3>Direito do Trabalho</h3><p>Assessoria estratégica em relações trabalhistas e litígios.</p></div>
+        <div class="card"><h3>Direito Previdenciário</h3><p>Consultoria e processos para benefícios e direitos previdenciários.</p></div>
+        <div class="card"><h3>Direito do Consumidor</h3><p>Defesa de direitos do consumidor e mediação de conflitos.</p></div>
+        <div class="card"><h3>Direito Cível</h3><p>Demandas cíveis com estratégia processual e foco em resultados.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipe -->
+  <section id="equipe" class="equipe">
+    <div class="container text-center">
+      <h2>Advogada Responsável</h2>
+      <img src="https://via.placeholder.com/300x400" alt="Dra. Débora Kulczar" class="profile-img">
+      <h3>Dra. Débora Kulczar</h3>
+      <p>Advogada – OAB 479600-SP</p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2 class="text-center">Entre em Contato</h2>
+      <form id="contact-form" class="form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensagem" rows="5" required></textarea>
+        <button type="submit" class="btn primary">Enviar</button>
+      </form>
+      <div class="contact-info text-center">
+        <p><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo/SP</p>
+        <p><strong>Telefone:</strong> (11) 99999-9999</p>
+        <p><strong>E-mail:</strong> contato@deborakulczar.com</p>
+        <p><strong>Horário:</strong> Seg - Sex: 9h às 18h</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 Débora Kulczar Advocacia. Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
